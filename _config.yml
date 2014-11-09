@@ -1,0 +1,13 @@
+# Site settings
+title: beckymiller
+email: info@beckymiller.co.uk
+description: > # this means to ignore newlines until "baseurl:"
+  All about me and my projects and awesome things I see around the world
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://beckymiller.co.uk" # the base hostname & protocol for your site
+twitter_username: beckymiller
+github_username:  beckymiller
+
+
+# Build settings
+markdown: kramdown
