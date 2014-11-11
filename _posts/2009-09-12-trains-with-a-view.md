@@ -1,18 +1,11 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-10-31 21:32:35
+title:  "Trains with a view"
+date:   2009-09-12
 categories: jekyll update
 ---
-<p><p>
-
 <object width="530" height="385"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=6766578&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=6766578&amp;server=vimeo.com&amp;show_title=0&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="530" height="385"></embed></object>
 
-<p>12.09.09 <strong>Trains with a view</strong>
-<br>Just pulling out of Euston Station and even though I have a book in my bag I want to read and my laptop with work to do, I am compelled to look out of the window.  I love going on the train.  First off you get to go fast which is exciting.  Secondly you get to see stuff you don't ussually see, like car parks and road layouts, the patterns that fields are ploughed and trees are planted, other trains and trucks, warehouses for highstreet shops and supermarkets in generic metal sheds with their logos badges to tell them apart.  Thirdly, on a train your view of the world is often from a slightly elevated perspective,  Not dissimilar from when you have just taken off in a plane.  This slightly higher viewpoint allows you to see the often banal landscape slightly more objectively.  The moving image is a bit like watching a movie for me, where I make up the narative with the thoughts in my head.  Maybe a communting journey is more like a soap opera, rather repeatative, where you become familiar with the charaters and scenery and it ussually shows at the same time every day; after a while it becomes a little teedious.  I find the good film scenario the most exciting, where you have a start point and an open ending which leads onto new adventures.
-<br>The film above is a composition of 76 photos taken on the train from Brighton to London a few weeks ago.  I've done this journey tens of times but I still look out the window.<br>Please note that this post excludes undergroudn trains.  Maybe I will write something about them in another post as I think they are interesting for other reasons.
-</p>
-
-<br>
-<p><a href="index.html">[top]</a><p>
-<br>
+__Trains with a view__  
+Just pulling out of Euston Station and even though I have a book in my bag I want to read and my laptop with work to do, I am compelled to look out of the window.  I love going on the train.  First off you get to go fast which is exciting.  Secondly you get to see stuff you don't usually see, like car parks and road layouts, the patterns that fields are ploughed and trees are planted, other trains and trucks, warehouses for highstreet shops and supermarkets in generic metal sheds with their logos badges to tell them apart.  Thirdly, on a train your view of the world is often from a slightly elevated perspective,  Not dissimilar from when you have just taken off in a plane.  This slightly higher viewpoint allows you to see the often banal landscape slightly more objectively.  The moving image is a bit like watching a movie for me, where I make up the narative with the thoughts in my head.  Maybe a communting journey is more like a soap opera, rather repeatative, where you become familiar with the characters and scenery and it usually shows at the same time every day; after a while it becomes a little teedious.  I find the good film scenario the most exciting, where you have a start point and an open ending which leads onto new adventures.  
+The film above is a composition of 76 photos taken on the train from Brighton to London a few weeks ago.  I've done this journey tens of times but I still look out the window.<br>Please note that this post excludes underground trains.  Maybe I will write something about them in another post as I think they are interesting for other reasons.

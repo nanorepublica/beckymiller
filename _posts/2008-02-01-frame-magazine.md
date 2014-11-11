@@ -1,17 +1,11 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-10-31 21:32:35
+title:  "Frame Magazine"
+date:   2008-02-01
 categories: jekyll update
 ---
-<p><p>
+![This is an image.]({{ site.baseurl }}/media/jpg/framemag0108.jpg)
 
-<img src="jpg/framemag0108.jpg" alt="This is an image." />
+[Frame Magazine]({{ site.baseurl }}/media/jpg/framemag0108.jpg)
 
-<p>01-02.08 <a class="project-link" href="jpg/framemag0108.jpg" target="self">Frame Magazine</a>
-
-<br><a class="light-grey-link" href="robinet1.html" target="self">Je ne suis pas un robinet</a> featured in 2007 European design graduates review.  View article <a class="light-grey-link" href="jpg/framemag0108.jpg" target="self">here</a>.  </p>
-
-<br>
-<p><a href="index.html">[top]</a><p>
-<br>
+[Je ne suis pas un robinet](robinet1.html) featured in 2007 European design graduates review.  View article [here]({{ site.baseurl }}/media/jpg/framemag0108.jpg).
