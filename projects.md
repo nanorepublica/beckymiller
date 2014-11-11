@@ -2,25 +2,26 @@
 layout: page
 title: projects
 permalink: /projects/
+top: true
 ---
 
 __2010__  
-[Bused Up]("busedup1.html")
+[Bused Up](/projects/busedup)
 
 __2008__  
-[Christmas2008]("christmas08a.html")  
-[Forward Slash]("forwardslash1.html")  
-[Multiply]("multiply1.html")
+[Christmas2008](/projects/christmas08)  
+[Forward Slash](/projects/forwardslash)  
+[Multiply](/projects/multiply)
 
 __2007__  
-[Talking Products]("TP1.html")  
-[In Case of Emergency]("emergency1.html")  
-[This Little Piggy]("piggy1.html")  
-[Je ne suis pas un robient]("robinet1.html")  
-[Je ne suis pas un arossoir]("arossoir1.html")  
-[500mg chocolate]("choc1.html")  
+[Talking Products](/projects/TP)  
+[In Case of Emergency](/projects/emergency)  
+[This Little Piggy](/projects/piggy)  
+[Je ne suis pas un robient](/projects/robinet)  
+[Je ne suis pas un arossoir](/projects/arossoir)  
+[500mg chocolate](/projects/choc)  
 
 __2006__  
-[candleLight]("candlelight1.html")  
-[MyCup]("mycup1.html")  
-[CycleSeat]("cycleseat1.html")  
+[candleLight](/projects/candlelight)  
+[MyCup](/projects/mycup)  
+[CycleSeat](/projects/cycleseat)  

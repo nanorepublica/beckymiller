@@ -2,6 +2,7 @@
 layout: page
 title: contact
 permalink: /contact/
+top: true
 ---
 
 Any questions? Quelque question? ¿Alguna pregunta?
