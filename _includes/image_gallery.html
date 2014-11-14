@@ -19,7 +19,6 @@ window.onhashchange = init;
 window.onload = init;
 
 function init() {
-    var url_parts = document.URL.split('#');
     if (!window.location.hash) {
         show_image('i1');
     } else {
@@ -29,12 +28,11 @@ function init() {
 }
 
 function show_image(id) {
-    var images = document.getElementsByTagName('img');
-    [].forEach.call(images, function (image, index) {
-        if (image.attributes.id.value === id) {
-            image.style.display = 'block';
+    $('.ig').each(function(){
+        if ($(this).attr('id') === id) {
+            $(this).show();
         } else {
-            image.style.display = 'none';
+            $(this).hide();
         }
     });
 }
@@ -42,13 +40,15 @@ function show_image(id) {
 </script>
 
 {% for image in page.images %}
-    <img id="i{{ forloop.index }}" src="{{ image[0] | prepend: site.baseurl }}" alt="{{ image[1] }}"/>
+    <img class="ig" id="i{{ forloop.index }}" src="{{ image[0] | prepend: site.baseurl }}" alt="{{ image[1] }}"/>
 {% endfor %}
 
 <br/>
 <p>
-    {% for image in page.images %}
-        <a id="l{{ forloop.index }}" href="#{{ forloop.index }}" >{{ forloop.index }}</a>
-    {% endfor %}
+    {% if pages.images > 1 %}
+        {% for image in page.images %}
+            <a id="l{{ forloop.index }}" href="#{{ forloop.index }}" >{{ forloop.index }}</a>
+        {% endfor %}
+    {% endif %}
 </p>
 </div>

@@ -4,6 +4,7 @@ title: projects
 permalink: /projects/
 top: true
 ---
+!["#666"]({{ site.baseurl }}/media/jpg/yellow.jpg)
 
 __2010__  
 [Bused Up](/projects/busedup)

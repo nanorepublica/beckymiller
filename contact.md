@@ -4,6 +4,7 @@ title: contact
 permalink: /contact/
 top: true
 ---
+!["#FF00FF"]({{ site.baseurl }}/media/jpg/magenta.jpg)
 
 Any questions? Quelque question? ¿Alguna pregunta?
 

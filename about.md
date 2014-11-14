@@ -4,6 +4,7 @@ title: about
 permalink: /about/
 top: true
 ---
+!["#00FFFF"]({{ site.baseurl }}/media/jpg/cyan.jpg)
 
 Designers have the opportunity and the privillage to influence the way people think and behave.  Everyone is a designer to a certain extent.
 
