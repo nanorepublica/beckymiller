@@ -14,7 +14,7 @@ __2008__
 [Multiply](/projects/multiply)
 
 __2007__  
-[Talking Products](/projects/TP)  
+[Talking Products](/projects/talkingproducts)  
 [In Case of Emergency](/projects/emergency)  
 [This Little Piggy](/projects/piggy)  
 [Je ne suis pas un robient](/projects/robinet)  

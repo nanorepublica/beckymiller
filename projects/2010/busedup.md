@@ -1,51 +1,9 @@
 ---
-layout: page
+layout: project
 title: Bused Up
 permalink: /projects/busedup/
+images: { /media/jpg/busedup.jpg: 'Alt text 1', /media/jpg/busedup2.jpg: 'Alt text 2', /media/jpg/busedup4.jpg: 'Alt text 3', /media/jpg/busedup3.jpg: 'Alt text'}
 ---
-
-<style>
-
-img {
-    display: none;
-}
-
-
-img#1 {
-    display: block;
-}
-
-</style>
-
-<script type="text/javascript">
-
-window.onload = function() {
-    show_image('i1');
-}
-
-function show_image(id) {
-    console.log('called!')
-    var images = document.getElementsByTagName('img');
-    [].forEach.call(images, function (image, index) {
-        if (image.attributes.id.value === id) {
-            image.style.display = 'block';
-        } else {
-            image.style.display = 'none';
-        }
-    });
-}
-
-</script>
-
-<img id="i1" src="{{ site.baseurl }}/media/jpg/busedup.jpg" alt="This is an image."/>
-<img id="i2" src="{{ site.baseurl }}/media/jpg/busedup2.jpg" alt="This is an image."/>
-<img id="i3" src="{{ site.baseurl }}/media/jpg/busedup4.jpg" alt="This is an image."/>
-<img id="i4" src="{{ site.baseurl }}/media/jpg/busedup3.jpg" alt="This is an image."/>
-
-jpgs <a onclick="show_image('i1')" id="l1" href="#1" >1</a>
-<a onclick="show_image('i2')" id="l2" href="#2" >2</a>
-<a onclick="show_image('i3')" id="l3" href="#3" >3</a>
-<a onclick="show_image('i4')" id="l4" href="#4" >4</a>
 
 _10th October 2009: I stopped walking when I saw this broken chair at the bus stop opposite Essex Road Station yesterday. I wondered why it had been left there. Evidently it had been in good condition until it had been shattered across the back somehow. Had it been chucked out of home just because it was looking a bit tired? Or was it more complex than that? I think I can make a good home for this chair even if its back is broken; I dont think the bus stop will miss it too much, there was no queue anyway._
 
