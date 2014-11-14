@@ -38,11 +38,11 @@ function show_image(id) {
 }
 
 </script>
+<p>
 {% for image in page.images %}
     <img class="ig" id="i{{ forloop.index }}" src="{{ image[0] | prepend: site.baseurl }}" alt="{{ image[1] }}"/>
 {% endfor %}
-
-<br/>
+</p>
 <p>
 {% assign no_of_images = page.images | size %}
     {% if no_of_images > 1 %}
