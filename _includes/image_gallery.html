@@ -21,14 +21,19 @@ var images = $('.ig');
 var i = 1;
 
 images.on('swipeleft', function(e){
+    console.log(e);
+    console.log(i);
   swipe(i);
 }).on('swiperight', function(e) {
+    console.log(e);
+    console.log(i);
   swipe(i);
 });
 
 function swipe(i) {
     var length = {{ page.images | size }};
     var n = i + 1;
+    console.log(n);
     if (n >= length) {
         n = 1;
     }
