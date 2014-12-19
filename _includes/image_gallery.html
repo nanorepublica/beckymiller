@@ -47,12 +47,18 @@ function handleTouchMove(evt) {
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
             /* left swipe */ 
-            console.log(window.location.hash[1])
-            swipe(window.location.hash[1] + 1);
+            if (window.location.hash[1] === undefined){
+                swipe(2)
+            } else {
+                swipe(window.location.hash[1] + 1);
+            }
         } else {
             /* right swipe */
-            console.log(window.location.hash[1])
-            swipe(window.location.hash[1] - 1);
+            if (window.location.hash[1] === undefined){
+                swipe(4)
+            } else {
+                swipe(window.location.hash[1] - 1);
+            }
         }                       
     } 
     // else {
@@ -82,6 +88,7 @@ function init() {
 
 function show_image(id) {
     $('.ig').each(function(){
+        console.log(this)
         if ($(this).attr('id') === id) {
             $(this).show();
         } else {
