@@ -48,14 +48,14 @@ function handleTouchMove(evt) {
         if ( xDiff > 0 ) {
             /* left swipe */ 
             if (window.location.hash[1] === undefined){
-                swipe(2)
+                swipe(i+1);
             } else {
                 swipe(window.location.hash[1] + 1);
             }
         } else {
             /* right swipe */
             if (window.location.hash[1] === undefined){
-                swipe(4)
+                swipe(i-1);
             } else {
                 swipe(window.location.hash[1] - 1);
             }
@@ -88,7 +88,6 @@ function init() {
 
 function show_image(id) {
     $('.ig').each(function(){
-        console.log(this)
         if ($(this).attr('id') === id) {
             $(this).show();
         } else {
