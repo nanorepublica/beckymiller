@@ -1,6 +1,7 @@
 <div id="image_gallery">
-<script src="https://github.com/stephband/jquery.event.move/blob/master/js/jquery.event.move.js"></script>
-<script src="https://github.com/stephband/jquery.event.swipe/blob/master/js/jquery.event.swipe.js"></script>
+<script src="/static/js/jquery-2.1.1.min.js"></script>
+<script src="/static/js/jquery.event.move.js"></script>
+<script src="/static/js/jquery.event.swipe.js"></script>
 <style>
 img {
     display: none;
@@ -19,7 +20,6 @@ window.onload = init;
 var images = $('.ig');
 var i = 1;
 
-
 images.on('swipeleft', function(e){
   swipe(i);
 }).on('swiperight', function(e) {
@@ -29,7 +29,7 @@ images.on('swipeleft', function(e){
 function swipe(i) {
     var length = {{ page.images | size }};
     var n = i + 1;
-    if (n >== length) {
+    if (n >= length) {
         n = 1;
     }
     show_image('#'+ n);
