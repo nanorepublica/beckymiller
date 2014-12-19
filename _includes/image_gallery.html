@@ -1,22 +1,39 @@
 <div id="image_gallery">
+<script src="https://github.com/stephband/jquery.event.move/blob/master/js/jquery.event.move.js"></script>
+<script src="https://github.com/stephband/jquery.event.swipe/blob/master/js/jquery.event.swipe.js"></script>
 <style>
-
 img {
     display: none;
 }
 
-
 img#1 {
     display: block;
 }
-
 </style>
-
 <script type="text/javascript">
 
 //initialisation
 window.onhashchange = init;
 window.onload = init;
+
+var images = $('.ig');
+var i = 1;
+
+
+images.on('swipeleft', function(e){
+  swipe(i);
+}).on('swiperight', function(e) {
+  swipe(i);
+});
+
+function swipe(i) {
+    var length = {{ page.images | size }};
+    var n = i + 1;
+    if (n >== length) {
+        n = 1;
+    }
+    show_image('#'+ n);
+}
 
 function init() {
     if (!window.location.hash) {
@@ -38,7 +55,7 @@ function show_image(id) {
 }
 
 </script>
-<p>
+<p id="swipe">
 {% for image in page.images %}
     <img class="ig" id="i{{ forloop.index }}" src="{{ image[0] | prepend: site.baseurl }}" alt="{{ image[1] }}"/>
 {% endfor %}
