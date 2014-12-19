@@ -2,6 +2,7 @@
 <script src="/static/js/jquery-2.1.1.min.js"></script>
 <script src="/static/js/jquery.event.move.js"></script>
 <script src="/static/js/jquery.event.swipe.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <style>
 img {
     display: none;
@@ -17,17 +18,21 @@ img#1 {
 window.onhashchange = init;
 window.onload = init;
 
-var images = $('.ig');
-var i = 1;
+// var images = $('.ig');
+// var i = 1;
 
-images.on('swipeleft', function(e){
-    console.log(e);
-    console.log(i);
-  swipe(i);
-}).on('swiperight', function(e) {
-    console.log(e);
-    console.log(i);
-  swipe(i);
+// images.on('swipeleft', function(e){
+//     console.log(e);
+//     console.log(i);
+//   swipe(i);
+// }).on('swiperight', function(e) {
+//     console.log(e);
+//     console.log(i);
+//   swipe(i);
+// });
+
+$('.ig').on('swipe', function( event ){
+   show_image(event.target); 
 });
 
 function swipe(i) {
