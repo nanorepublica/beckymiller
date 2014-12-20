@@ -21,8 +21,10 @@ var length = {{ page.images | size }};
 function swipe(n){
     if (n > length) {
        n = 1;
+       i = 1;
     } else if (n < 1) {
         n = length;
+        i = length;
     }
     console.log(n)
     show_image('i'+n);
