@@ -47,22 +47,12 @@ function handleTouchMove(evt) {
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
             /* left swipe */
-            console.log('left')
-            console.log(window.location.hash[1])
-            console.log('i'+i)
-            if (window.location.hash[1] === undefined){
-                swipe(i+1);
-            } else {
-                swipe(window.location.hash[1] + 1);
-            }
+            i = i + 1;
         } else {
             /* right swipe */
-            if (window.location.hash[1] === undefined){
-                swipe(i-1);
-            } else {
-                swipe(window.location.hash[1] - 1);
-            }
-        }                       
+            i = i - 1;
+        }   
+        swipe(i);
     } 
     // else {
     //     if ( yDiff > 0 ) {
