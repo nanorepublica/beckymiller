@@ -8,7 +8,8 @@ top: true
 
 Designers have the opportunity and the privillage to influence the way people think and behave.  Everyone is a designer to a certain extent.
 
-> You have a duty to make it fun.  Even when times are hard and the light gets dark.  If you don't you'll just get born and then you'll die. - Dan Germain
+> You have a duty to make it fun.  Even when times are hard and the light gets dark.  If you don't you'll just get born and then you'll die.  
+Dan Germain
 
 __Becky Miller__  
 Brighton/London based designer  

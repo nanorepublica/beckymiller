@@ -9,38 +9,46 @@ img#1 {
 }
 </style>
 <script type="text/javascript">
-document.addEventListener('touchstart', handleTouchStart, false);        
+//initialisation
+document.addEventListener('touchstart', handleTouchStart, false);
 document.addEventListener('touchmove', handleTouchMove, false);
+window.onload = init;
+window.onhashchange = init;
+window.onkeydown = keyPressEvent;
 
-var xDown = null;                                                        
-var yDown = null;    
+var xDown = null;
+var yDown = null;
 
-var i = 1;
+if (window.location.hash) {
+    var i = window.location.hash[1];
+} else {
+    var i = 1;
+}
 var length = {{ page.images | size }};
 
-function swipe(n){
-    if (n > length) {
-       n = 1;
-       i = 1;
-    } else if (n < 1) {
-        n = length;
-        i = length;
+// KEYBOARD EVENT
+function keyPressEvent(evt) {
+
+    if (evt.keyCode === 37) {
+        i = i - 1;
+    } else if (evt.keyCode === 39) {
+        i = i + 1;
     }
-    console.log(n)
-    show_image('i'+n);
+    loop(i);
 }
 
-function handleTouchStart(evt) {                                         
-    xDown = evt.touches[0].clientX;                                      
-    yDown = evt.touches[0].clientY;                                      
-};                                                
+// SWIPE EVENT
+function handleTouchStart(evt) {
+    xDown = evt.touches[0].clientX;
+    yDown = evt.touches[0].clientY;
+};
 
 function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
         return;
     }
 
-    var xUp = evt.touches[0].clientX;                                    
+    var xUp = evt.touches[0].clientX;
     var yUp = evt.touches[0].clientY;
 
     var xDiff = xDown - xUp;
@@ -53,34 +61,54 @@ function handleTouchMove(evt) {
         } else {
             /* right swipe */
             i = i - 1;
-        }   
-        swipe(i);
-    } 
+        }
+        loop(i);
+    }
     // else {
     //     if ( yDiff > 0 ) {
-    //         /* up swipe */ 
-    //     } else { 
+    //         /* up swipe */
+    //     } else {
     //         /* down swipe */
-    //     }                                                                 
+    //     }
     // }
     /* reset values */
     xDown = null;
-    yDown = null;                                             
+    yDown = null;
 };
 
-//initialisation
-window.onhashchange = init;
-window.onload = init;
+//loop the image
+function loop(n){
+    if (n > length) {
+       n = 1;
+       i = 1;
+    } else if (n < 1) {
+        n = length;
+        i = length;
+    }
+    // console.log(n)
+    // show_image('i'+n);
+    updateHash(i)
+}
+
+//update location
+function updateHash(newhash) {
+    if (newhash[0] !== '#') {
+        newhash = '#' + newhash
+    }
+    location.hash = newhash
+}
+
 
 function init() {
     if (!window.location.hash) {
-        show_image('i1');
+        var img = 'i1';
     } else {
-        img = 'i'+window.location.hash[1]
-        show_image(img);
+        var img = 'i'+window.location.hash[1]
     }
+    show_image(img);
 }
 
+// Image manipulation
 function show_image(id) {
     $('.ig').each(function(){
         if ($(this).attr('id') === id) {
@@ -90,7 +118,6 @@ function show_image(id) {
         }
     });
 }
-
 </script>
 <p id="swipe">
 {% for image in page.images %}
