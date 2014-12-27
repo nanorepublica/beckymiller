@@ -97,8 +97,8 @@ a {
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $grey-color-light;
+        text-decoration: none;
     }
 }
 
@@ -201,4 +201,8 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+p strong {
+    font-weight: bold;
 }

@@ -1,6 +1,6 @@
 # Site settings
 title: beckymiller
-email: info@beckymiller.co.uk
+email: hello@beckymiller.co.uk
 description: > # this means to ignore newlines until "baseurl:"
   thoughts + observations | ideas + things
 baseurl: "" # the subpath of your site, e.g. /blog/

@@ -1,13 +1,4 @@
 <div id="image_gallery">
-<style>
-img {
-    display: none;
-}
-
-img#1 {
-    display: block;
-}
-</style>
 <script type="text/javascript">
 //initialisation
 document.addEventListener('touchstart', handleTouchStart, false);
@@ -85,8 +76,6 @@ function loop(n){
         n = length;
         i = length;
     }
-    // console.log(n)
-    // show_image('i'+n);
     updateHash(i)
 }
 
@@ -101,9 +90,9 @@ function updateHash(newhash) {
 
 function init() {
     if (!window.location.hash) {
-        var img = 'i1';
+        var img = '1';
     } else {
-        var img = 'i'+window.location.hash[1]
+        var img = window.location.hash[1]
     }
     show_image(img);
 }
@@ -111,10 +100,17 @@ function init() {
 // Image manipulation
 function show_image(id) {
     $('.ig').each(function(){
-        if ($(this).attr('id') === id) {
-            $(this).show();
+        if ($(this).attr('id') === 'i'+ id) {
+            $(this).addClass('ig-active');
         } else {
-            $(this).hide();
+            $(this).removeClass('ig-active');
+        }
+    });
+    $('.ig-l').each(function(){
+        if ($(this).attr('id') === 'l'+ id) {
+            $(this).addClass('ig-l-active');
+        } else {
+            $(this).removeClass('ig-l-active');
         }
     });
 }
@@ -128,7 +124,7 @@ function show_image(id) {
 {% assign no_of_images = page.images | size %}
     {% if no_of_images > 1 %}
         {% for image in page.images %}
-            <a id="l{{ forloop.index }}" href="#{{ forloop.index }}" >{{ forloop.index }}</a>
+            <a class='ig-l' id="l{{ forloop.index }}" href="#{{ forloop.index }}" >{{ forloop.index }}</a>
         {% endfor %}
     {% endif %}
 </p>
