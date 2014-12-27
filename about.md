@@ -21,7 +21,7 @@ __Press__
 [The Fundamentals of Product Design]("jpg/fundprod2009.jpg")  
 
 __Exhibitions__  
-[Lightworks, Marsden Woo Gallery, London, Nov-Dec 2010]("http://www.marsdenwoo.com/docs/press_lightworks_10.pdf")  
+[Lightworks, Marsden Woo Gallery, London, 2010]("http://www.marsdenwoo.com/docs/press_lightworks_10.pdf")  
 [It's Nice That Original Format Exhibition, 2008 Plymouth + London]("http://version1.itsnicethat.com/index.php?s=of")  
 Tent London, 2007  
 [New Designers 2007, London]("http://www.core77.com/blog/education/u_of_brighton_london_new_designers_sneak_preview_6574.asp")  
