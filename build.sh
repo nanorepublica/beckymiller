@@ -2,5 +2,5 @@
 
 gem install bitballoon
 gem install jekyll
-script: jekyll build
+jekyll build
 
